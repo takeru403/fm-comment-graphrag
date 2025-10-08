@@ -119,8 +119,8 @@ def generate_comment() -> str:
         documents = [str(raw_docs)]
 
     # system prompt を文字列に正規化
-    sp = read_prompt(prompt_path)
-    system_prompt = sp.get("system_prompt") if isinstance(sp, dict) else str(sp)
+    system_prompt = read_prompt(prompt_path)
+    #system_prompt = sp.get("system_prompt") if isinstance(sp, dict) else str(sp)
 
     # 想定クエリ（N225運用に関連するトピックを広くカバー）
     query = "日経平均 株価 東京市場 半導体 金利 為替 米国株 景気 FRB インフレ 決算"
