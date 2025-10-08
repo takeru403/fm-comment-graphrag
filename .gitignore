@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+.env
+
+outpust/
+data/news.json
+data/sample_月報.pdf
+gephiファイル.gephi
+*.gephi
