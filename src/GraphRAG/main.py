@@ -17,6 +17,7 @@ from config.setting import Settings
 from src.common.load_news_documents import load_news_documents
 from src.common.rag_common import retrieve_top_k
 from src.common.read_prompt import read_prompt
+from src.data.yfinance_data import YFinanceData
 
 
 def _normalize_to_texts(raw_docs: Any) -> List[str]:
@@ -189,11 +190,16 @@ def generate_comment() -> str:
     export_path = project_root / "outputs" / "graph.gexf"
     export_neo4j_to_gexf(neo4j_graph, export_path)
 
+    # 日経平均の終値・差分・変化率の推移（直近最大10ポイント）
+    nikkei = YFinanceData("^N225")
+    price_trend = nikkei.summarize_closing_trend(max_points=10)
+    print(graph_context)
     user_instruction = (
         "以下の知識グラフ要約（トリプル）とニュース要約を根拠に、日経平均連動ファンドの視点から、相場への示唆と運用スタンスを日本語で400文字程度で述べてください。\n"
         "- 箇条書きにせず簡潔に。\n"
         "- 過度な断定を避け、リスク要因も一言触れてください。\n"
         "- 数字や固有名詞は可能な範囲で反映。\n\n"
+        f"【日経平均 終値・差分・変化率の推移】\n{price_trend}\n\n"
         f"【知識グラフ要約】\n{graph_context}\n\n"
         f"【ニュース要約】\n{'\n---\n'.join(top_texts)}"
     )

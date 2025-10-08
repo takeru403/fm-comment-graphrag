@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2025-10-03">
+  <meta lastmodifieddate="2025-10-08">
     <creator>NetworkX 3.5</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
@@ -37,6 +37,11 @@
         </attvalues>
       </node>
       <node id="Noriyuki Hirata" label="Person">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="半導体関連銘柄" label="Stock">
         <attvalues>
           <attvalue for="0" value="entity" />
         </attvalues>
@@ -96,6 +101,26 @@
           <attvalue for="0" value="entity" />
         </attvalues>
       </node>
+      <node id="Frb" label="Organization">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="アメリカの労働市場" label="Market">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="Hiroko Hamada" label="Person">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="Avic" label="Company">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
     </nodes>
     <edges>
       <edge source="日経平均" target="東京株式市場" id="0" weight="2.0">
@@ -123,69 +148,99 @@
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="東京株式市場" target="日経平均株価" id="5" weight="1.0">
+      <edge source="日経平均" target="半導体関連銘柄" id="5" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="押し上げ" />
+        </attvalues>
+      </edge>
+      <edge source="東京株式市場" target="日経平均株価" id="6" weight="3.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="自民党総裁選" target="日経平均" id="6" weight="1.0">
+      <edge source="米ハイテク株" target="半導体関連銘柄" id="7" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="流れを引き継ぐ" />
+        </attvalues>
+      </edge>
+      <edge source="自民党総裁選" target="日経平均" id="8" weight="1.0">
         <attvalues>
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="日経平均株価" target="最高値" id="7" weight="1.0">
+      <edge source="日経平均株価" target="最高値" id="9" weight="1.0">
         <attvalues>
           <attvalue for="1" value="更新" />
         </attvalues>
       </edge>
-      <edge source="Noriyuki Hirata" target="東京株式市場" id="8" weight="1.0">
+      <edge source="Noriyuki Hirata" target="東京株式市場" id="10" weight="1.0">
         <attvalues>
           <attvalue for="1" value="報告" />
         </attvalues>
       </edge>
-      <edge source="為替の円安" target="東京株式市場" id="9" weight="1.0">
+      <edge source="為替の円安" target="東京株式市場" id="11" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
         </attvalues>
       </edge>
-      <edge source="Topix" target="東京株式市場" id="10" weight="1.0">
+      <edge source="Topix" target="東京株式市場" id="12" weight="1.0">
         <attvalues>
           <attvalue for="1" value="高値更新" />
         </attvalues>
       </edge>
-      <edge source="東京市場" target="日経平均" id="11" weight="2.0">
+      <edge source="東京市場" target="日経平均" id="13" weight="2.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="米国市場" target="日経平均" id="12" weight="2.0">
+      <edge source="米国市場" target="日経平均" id="14" weight="2.0">
         <attvalues>
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="Ufj" target="東京市場" id="13" weight="2.0">
+      <edge source="Ufj" target="東京市場" id="15" weight="2.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="Inpex" target="東京市場" id="14" weight="2.0">
+      <edge source="Inpex" target="東京市場" id="16" weight="2.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="長期金利" target="最高値" id="15" weight="1.0">
+      <edge source="長期金利" target="最高値" id="17" weight="1.0">
         <attvalues>
           <attvalue for="1" value="高水準" />
         </attvalues>
       </edge>
-      <edge source="円" target="東京株式市場" id="16" weight="1.0">
+      <edge source="円" target="東京株式市場" id="18" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
         </attvalues>
       </edge>
-      <edge source="円安" target="投資家心理" id="17" weight="1.0">
+      <edge source="円安" target="投資家心理" id="19" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
+        </attvalues>
+      </edge>
+      <edge source="Frb" target="アメリカの労働市場" id="20" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="Frb" target="日経平均株価" id="21" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="Hiroko Hamada" target="日経平均" id="22" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="報告" />
+        </attvalues>
+      </edge>
+      <edge source="Avic" target="東京市場" id="23" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="PARTICIPATES_IN" />
         </attvalues>
       </edge>
     </edges>

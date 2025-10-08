@@ -11,6 +11,7 @@ from src.common.load_news_documents import load_news_documents
 from src.common.rag_common import retrieve_top_k
 from src.common.read_prompt import read_prompt
 from src.common.rag_common import retrieve_top_k
+from src.data.yfinance_data import YFinanceData
 
 def build_context(snippets: List[Tuple[str, float]], max_chars: int = 2400) -> str:
     lines: List[str] = []
@@ -118,17 +119,13 @@ def generate_comment() -> str:
     else:
         documents = [str(raw_docs)]
 
-    # system prompt を文字列に正規化
-    system_prompt = read_prompt(prompt_path)
-    #system_prompt = sp.get("system_prompt") if isinstance(sp, dict) else str(sp)
+    prompt = read_prompt(prompt_path)
 
     # 想定クエリ（N225運用に関連するトピックを広くカバー）
     query = "日経平均 株価 東京市場 半導体 金利 為替 米国株 景気 FRB インフレ 決算"
     top_docs = retrieve_top_k(query=query, documents=documents, embedder=embedder, k=8)
-    print(top_docs)
     context = build_context(top_docs)
 
-    # Embedding Projector用に、全ドキュメントの埋め込みを書き出し（空ならスキップ）
     out_dir = (Path(__file__).resolve().parents[2] / "outputs" / "embedding_projector")
     _export_embeddings_for_projector(
         texts=documents,
@@ -136,15 +133,20 @@ def generate_comment() -> str:
         out_dir=out_dir,
         filename_prefix="news_docs",
     )
+    # 日経平均の終値・差分・変化率の推移（直近最大10ポイント）
+    nikkei = YFinanceData("^N225")
+    price_trend = nikkei.summarize_closing_trend(max_points=10)
+    print(price_trend)
     user_instruction = (
         "以下のニュース要約を根拠に、日経平均連動ファンドの視点から、相場への示唆と運用スタンスを日本語で400文字程度で述べてください。\n"
         "- 箇条書きにせず簡潔に。\n"
         "- 過度な断定を避け、リスク要因も一言触れてください。\n"
         "- 数字や固有名詞は可能な範囲で反映。\n\n"
+        f"【日経平均 終値・差分・変化率の推移】\n{price_trend}\n\n"
         f"【ニュース要約】\n{context}"
     )
     res = llm.invoke(
-        [SystemMessage(content=system_prompt), HumanMessage(content=user_instruction)]
+        [SystemMessage(content=prompt["system_prompt"]), HumanMessage(content=user_instruction)]
     )
     output = (res.content or "").strip()
     return output

@@ -1,7 +1,7 @@
 import typer
 from typer import Typer
 
-from data.fetchdata import FetchNewsAPI
+from src.data.news_data import FetchNewsAPI
 
 app = Typer(no_args_is_help=True)
 
@@ -10,7 +10,6 @@ app = Typer(no_args_is_help=True)
 def fetch_news(q: str = typer.Argument(..., help="検索クエリ")):
     fetch_news = FetchNewsAPI(q)
     fetch_news.save_news()
-
 
 if __name__ == "__main__":
     app()
