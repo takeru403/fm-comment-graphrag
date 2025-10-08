@@ -12,6 +12,7 @@ from src.common.rag_common import retrieve_top_k
 from src.common.read_prompt import read_prompt
 from src.common.rag_common import retrieve_top_k
 from src.data.yfinance_data import YFinanceData
+from src.data.news_data_range import get_news_data_range
 
 def build_context(snippets: List[Tuple[str, float]], max_chars: int = 2400) -> str:
     lines: List[str] = []
@@ -121,6 +122,9 @@ def generate_comment() -> str:
 
     prompt = read_prompt(prompt_path)
 
+    # 対象期間（news.json の最小/最大 publishedAt）を取得
+    start_iso, end_iso = get_news_data_range(project_root / "data" / "news.json")
+
     # 想定クエリ（N225運用に関連するトピックを広くカバー）
     query = "日経平均 株価 東京市場 半導体 金利 為替 米国株 景気 FRB インフレ 決算"
     top_docs = retrieve_top_k(query=query, documents=documents, embedder=embedder, k=8)
@@ -138,10 +142,12 @@ def generate_comment() -> str:
     price_trend = nikkei.summarize_closing_trend(max_points=10)
     print(price_trend)
     user_instruction = (
-        "以下のニュース要約を根拠に、日経平均連動ファンドの視点から、相場への示唆と運用スタンスを日本語で400文字程度で述べてください。\n"
+        "以下のニュース要約を根拠に、日経平均連動ファンドの視点から、相場への示唆と運用スタンスを日本語で800文字程度で述べてください。\n"
         "- 箇条書きにせず簡潔に。\n"
         "- 過度な断定を避け、リスク要因も一言触れてください。\n"
-        "- 数字や固有名詞は可能な範囲で反映。\n\n"
+        "- 数字や固有名詞は可能な範囲で反映。\n"
+        "- 月前半/後半といった表現は使わず、対象期間全体として記述してください。\n\n"
+        f"【対象期間】{start_iso} 〜 {end_iso}\n"
         f"【日経平均 終値・差分・変化率の推移】\n{price_trend}\n\n"
         f"【ニュース要約】\n{context}"
     )

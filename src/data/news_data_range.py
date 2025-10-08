@@ -1,8 +1,11 @@
 import json
 from datetime import datetime
+from pathlib import Path
+from typing import Tuple, Union
 
-def get_news_data_range():
-    with open("data/news.json", "r", encoding="utf-8") as f:
+def get_news_data_range(news_path: Union[str, Path] = "data/news.json") -> Tuple[str, str]:
+    path_str = str(news_path)
+    with open(path_str, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     times = [
@@ -10,6 +13,8 @@ def get_news_data_range():
         for a in data.get("articles", [])
         if a.get("publishedAt")
     ]
+    if not times:
+        return "", ""
     return min(times).isoformat(), max(times).isoformat()
 
 if __name__ == "__main__":
