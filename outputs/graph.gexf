@@ -46,6 +46,11 @@
           <attvalue for="0" value="entity" />
         </attvalues>
       </node>
+      <node id="半導体関連の銘柄" label="Stock">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
       <node id="Noriyuki Hirata" label="Person">
         <attvalues>
           <attvalue for="0" value="entity" />
@@ -91,7 +96,37 @@
           <attvalue for="0" value="entity" />
         </attvalues>
       </node>
+      <node id="円高" label="Economicconcept">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="配当落ち" label="Economicconcept">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="44,936.73円" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="自民党" label="Political party">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
       <node id="Hiroko Hamada" label="Person">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="385.88円" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="前引け" label="Market event">
         <attvalues>
           <attvalue for="0" value="entity" />
         </attvalues>
@@ -106,6 +141,11 @@
           <attvalue for="0" value="entity" />
         </attvalues>
       </node>
+      <node id="ハイテク株" label="Stock">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
       <node id="Frb" label="Organization">
         <attvalues>
           <attvalue for="0" value="entity" />
@@ -116,7 +156,122 @@
           <attvalue for="0" value="entity" />
         </attvalues>
       </node>
+      <node id="利下げ" label="Concept">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="ダウ平均株価" label="Stock">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
       <node id="Avic" label="Company">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="株価指数" label="Financial metric">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="4万5700円台" label="Price">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="800円" label="Price">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="米国株式市場" label="Market">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="利下げ観測" label="Economic indicator">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="主要な株価指数" label="Stock index">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="為替" label="Currency">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="147.17円" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="売買高" label="Trading volume">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="27億2,352万株" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="売買代金" label="Trading value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="5兆4768億10百万円" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="値上り銘柄数" label="Stock count">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="547銘柄" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="値下り銘柄数" label="Stock count">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="1,033銘柄" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="騰落レシオ" label="Ratio">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="95.73％" label="Value">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="半導体株" label="Stock sector">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="米国株" label="Stock market">
+        <attvalues>
+          <attvalue for="0" value="entity" />
+        </attvalues>
+      </node>
+      <node id="寄付き" label="Event">
         <attvalues>
           <attvalue for="0" value="entity" />
         </attvalues>
@@ -138,7 +293,7 @@
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="日経平均" target="米国市場" id="3" weight="3.0">
+      <edge source="日経平均" target="米国市場" id="3" weight="4.0">
         <attvalues>
           <attvalue for="1" value="影響" />
         </attvalues>
@@ -148,109 +303,294 @@
           <attvalue for="1" value="関連" />
         </attvalues>
       </edge>
-      <edge source="日経平均" target="半導体関連銘柄" id="5" weight="1.0">
+      <edge source="日経平均" target="円" id="5" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="影響" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="円高" id="6" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="影響" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="配当落ち" id="7" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="影響" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="44,936.73円" id="8" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="自民党" id="9" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCED_BY" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="半導体関連銘柄" id="10" weight="1.0">
         <attvalues>
           <attvalue for="1" value="押し上げ" />
         </attvalues>
       </edge>
-      <edge source="日経平均" target="Hiroko Hamada" id="6" weight="1.0">
+      <edge source="日経平均" target="Hiroko Hamada" id="11" weight="1.0">
         <attvalues>
           <attvalue for="1" value="報告者" />
         </attvalues>
       </edge>
-      <edge source="東京株式市場" target="日経平均株価" id="7" weight="4.0">
+      <edge source="日経平均" target="385.88円" id="12" weight="4.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_CHANGE" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="最高値" id="13" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="UPDATES" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均" target="前引け" id="14" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="CLOSES" />
+        </attvalues>
+      </edge>
+      <edge source="東京株式市場" target="日経平均株価" id="15" weight="9.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="東京市場" target="日経平均" id="8" weight="2.0">
+      <edge source="東京株式市場" target="半導体関連の銘柄" id="16" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_ORDER" />
+        </attvalues>
+      </edge>
+      <edge source="東京市場" target="日経平均" id="17" weight="6.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="米ハイテク株" target="半導体関連銘柄" id="9" weight="2.0">
+      <edge source="米ハイテク株" target="半導体関連銘柄" id="18" weight="2.0">
         <attvalues>
           <attvalue for="1" value="流れを引き継ぐ" />
         </attvalues>
       </edge>
-      <edge source="米国市場" target="日経平均" id="10" weight="3.0">
+      <edge source="米国市場" target="日経平均" id="19" weight="4.0">
         <attvalues>
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="自民党総裁選" target="日経平均" id="11" weight="1.0">
+      <edge source="米国市場" target="ハイテク株" id="20" weight="2.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCED_BY" />
+        </attvalues>
+      </edge>
+      <edge source="自民党総裁選" target="日経平均" id="21" weight="1.0">
         <attvalues>
           <attvalue for="1" value="影響" />
         </attvalues>
       </edge>
-      <edge source="日経平均株価" target="最高値" id="12" weight="1.0">
+      <edge source="自民党総裁選" target="東京市場" id="22" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="影響" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均株価" target="最高値" id="23" weight="1.0">
         <attvalues>
           <attvalue for="1" value="更新" />
         </attvalues>
       </edge>
-      <edge source="Noriyuki Hirata" target="東京株式市場" id="13" weight="1.0">
+      <edge source="日経平均株価" target="株価指数" id="24" weight="2.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均株価" target="4万5700円台" id="25" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="REACHES" />
+        </attvalues>
+      </edge>
+      <edge source="日経平均株価" target="800円" id="26" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="INCREASES" />
+        </attvalues>
+      </edge>
+      <edge source="Noriyuki Hirata" target="東京株式市場" id="27" weight="1.0">
         <attvalues>
           <attvalue for="1" value="報告" />
         </attvalues>
       </edge>
-      <edge source="為替の円安" target="東京株式市場" id="14" weight="1.0">
+      <edge source="為替の円安" target="東京株式市場" id="28" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
         </attvalues>
       </edge>
-      <edge source="Topix" target="東京株式市場" id="15" weight="1.0">
+      <edge source="Topix" target="東京株式市場" id="29" weight="1.0">
         <attvalues>
           <attvalue for="1" value="高値更新" />
         </attvalues>
       </edge>
-      <edge source="Ufj" target="東京市場" id="16" weight="4.0">
+      <edge source="Ufj" target="東京市場" id="30" weight="4.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="Inpex" target="東京市場" id="17" weight="4.0">
+      <edge source="Inpex" target="東京市場" id="31" weight="4.0">
         <attvalues>
           <attvalue for="1" value="取引" />
         </attvalues>
       </edge>
-      <edge source="長期金利" target="最高値" id="18" weight="1.0">
+      <edge source="長期金利" target="最高値" id="32" weight="1.0">
         <attvalues>
           <attvalue for="1" value="高水準" />
         </attvalues>
       </edge>
-      <edge source="円" target="東京株式市場" id="19" weight="1.0">
+      <edge source="円" target="東京株式市場" id="33" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
         </attvalues>
       </edge>
-      <edge source="Hiroko Hamada" target="日経平均" id="20" weight="1.0">
+      <edge source="自民党" target="日経平均" id="34" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCES" />
+        </attvalues>
+      </edge>
+      <edge source="自民党" target="最高値" id="35" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="EXPECTATION" />
+        </attvalues>
+      </edge>
+      <edge source="Hiroko Hamada" target="日経平均" id="36" weight="1.0">
         <attvalues>
           <attvalue for="1" value="報告" />
         </attvalues>
       </edge>
-      <edge source="円安" target="投資家心理" id="21" weight="1.0">
+      <edge source="前引け" target="日経平均" id="37" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="ENDS_AT" />
+        </attvalues>
+      </edge>
+      <edge source="円安" target="投資家心理" id="38" weight="1.0">
         <attvalues>
           <attvalue for="1" value="支援" />
         </attvalues>
       </edge>
-      <edge source="Frb" target="アメリカの労働市場" id="22" weight="1.0">
+      <edge source="Frb" target="アメリカの労働市場" id="39" weight="2.0">
         <attvalues>
           <attvalue for="1" value="AFFECTS" />
         </attvalues>
       </edge>
-      <edge source="Frb" target="日経平均株価" id="23" weight="1.0">
+      <edge source="Frb" target="日経平均株価" id="40" weight="1.0">
         <attvalues>
           <attvalue for="1" value="AFFECTS" />
         </attvalues>
       </edge>
-      <edge source="アメリカの労働市場" target="Frb" id="24" weight="2.0">
+      <edge source="Frb" target="東京株式市場" id="41" weight="1.0">
         <attvalues>
           <attvalue for="1" value="AFFECTS" />
         </attvalues>
       </edge>
-      <edge source="Avic" target="東京市場" id="25" weight="3.0">
+      <edge source="Frb" target="日経平均" id="42" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCES" />
+        </attvalues>
+      </edge>
+      <edge source="Frb" target="利下げ" id="43" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_ACTION" />
+        </attvalues>
+      </edge>
+      <edge source="Frb" target="ダウ平均株価" id="44" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="利下げ観測" />
+        </attvalues>
+      </edge>
+      <edge source="アメリカの労働市場" target="Frb" id="45" weight="2.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="ダウ平均株価" target="最高値" id="46" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="ダウ平均株価" target="東京株式市場" id="47" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="最高値更新" />
+        </attvalues>
+      </edge>
+      <edge source="ダウ平均株価" target="Frb" id="48" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCED_BY" />
+        </attvalues>
+      </edge>
+      <edge source="Avic" target="東京市場" id="49" weight="4.0">
         <attvalues>
           <attvalue for="1" value="取引" />
+        </attvalues>
+      </edge>
+      <edge source="米国株式市場" target="利下げ観測" id="50" weight="2.0">
+        <attvalues>
+          <attvalue for="1" value="INFLUENCES" />
+        </attvalues>
+      </edge>
+      <edge source="米国株式市場" target="主要な株価指数" id="51" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="HITS_ALL_TIME_HIGH" />
+        </attvalues>
+      </edge>
+      <edge source="利下げ観測" target="日経平均株価" id="52" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="利下げ観測" target="株価指数" id="53" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="為替" target="147.17円" id="54" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="売買高" target="27億2,352万株" id="55" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="売買代金" target="5兆4768億10百万円" id="56" weight="2.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="値上り銘柄数" target="547銘柄" id="57" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="値下り銘柄数" target="1,033銘柄" id="58" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="騰落レシオ" target="95.73％" id="59" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="HAS_VALUE" />
+        </attvalues>
+      </edge>
+      <edge source="半導体株" target="日経平均" id="60" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="米国株" target="日経平均" id="61" weight="3.0">
+        <attvalues>
+          <attvalue for="1" value="AFFECTS" />
+        </attvalues>
+      </edge>
+      <edge source="寄付き" target="日経平均" id="62" weight="1.0">
+        <attvalues>
+          <attvalue for="1" value="STARTS_AT" />
         </attvalues>
       </edge>
     </edges>

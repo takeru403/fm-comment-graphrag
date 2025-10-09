@@ -174,8 +174,9 @@ def format_community_edges(G: nx.DiGraph, nodes: List[str], max_edges: int = 80)
     )[:max_edges]
     lines: List[str] = []
     for u, v, data in edges_sorted:
-        s_label = _safe_str(G.nodes[u].get("label", u))
-        o_label = _safe_str(G.nodes[v].get("label", v))
+        # 表示はGEXFのID（ノードキー）に合わせる
+        s_label = _safe_str(u)
+        o_label = _safe_str(v)
         rel = _safe_str(data.get("relation", ""))
         if s_label and rel and o_label:
             lines.append(f"{s_label} —{rel}→ {o_label}")
@@ -306,7 +307,7 @@ def generate_comment() -> str:
     top_texts = [t for t, _ in top_docs]
 
     # LLMでグラフ抽出→Neo4jへアップサート
-    upsert_texts_to_neo4j(neo4j_graph=neo4j_graph, llm=llm, texts=top_texts[:3])
+    upsert_texts_to_neo4j(neo4j_graph=neo4j_graph, llm=llm, texts=top_texts)
 
     # コミュニティRAG: グラフからコミュニティを検出し、クエリに近いものを選択
     G = build_networkx_from_neo4j(neo4j_graph)
@@ -320,7 +321,7 @@ def generate_comment() -> str:
     selectable_texts = [
         (s + "\n" + t).strip() if s else t for s, t in zip(community_summaries, community_edges_texts)
     ]
-    sel_idx = select_top_communities(embedder, query, selectable_texts, top_k=2)
+    sel_idx = select_top_communities(embedder, query, selectable_texts, top_k=4)
     selected_contexts = [selectable_texts[i] for i in sel_idx]
     graph_context = "\n\n---\n\n".join([c for c in selected_contexts if c])
 
