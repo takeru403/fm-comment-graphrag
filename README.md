@@ -110,7 +110,7 @@ just generate_RAG_comment
 export NEO4J_URI=... NEO4J_USERNAME=... NEO4J_PASSWORD=...
 uv run python src/GraphRAG/main.py
 # or
-just generate_GraphRAG_comment
+just graph_rag
 ```
 
 処理概要:
