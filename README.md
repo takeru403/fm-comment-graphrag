@@ -148,13 +148,3 @@ uv run python src/cli/main.py rag
 uv run python src/data/plot_chart.py
 ```
 
-## トラブルシュート
-
-- **NEO4J_* 未設定**: GraphRAG 実行時に例外を投げます。環境変数を設定してください。
-- **data/news.json が空/エラー応答**: `status` が `ok` 以外ならエラーにします（RAG）。クエリを変えて再取得してください。
-- **yfinance が空**: 期間が休場に当たる場合は自動でバッファ期間で再取得します。
-- **Embedding Projector TSV が空**: ニューステキストが空の場合は出力されません。
-
-## ライセンス
-
-本リポジトリのコードは、プロジェクト作成者の意図に従い利用してください。外部 API・データの利用規約（OpenAI, NewsAPI, Neo4j, Yahoo! 等）に従ってください。
